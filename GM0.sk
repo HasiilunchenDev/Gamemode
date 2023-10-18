@@ -1,0 +1,7 @@
+command /gm0 [<text>]:
+    trigger:
+        if player has permission "minecraft.command.gamemode":
+            set player's gamemode to Survival
+            send "Du bist jetzt im Überlebensmodus!" to player
+        else:
+            send "Du hast nicht die erforderlichen Rechte, um diesen Befehl auszuführen!" to player

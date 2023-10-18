@@ -1,0 +1,7 @@
+command /gm1 [<text>]:
+    trigger:
+        if player has permission "minecraft.command.gamemode":
+            set player's gamemode to creative
+            send "Du bist jetzt im Kreativmodus!" to player
+        else:
+            send "Du hast nicht die erforderlichen Rechte, um diesen Befehl auszuführen!" to player
